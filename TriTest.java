@@ -103,9 +103,8 @@ public class TriTest extends TestCase {
 	}
 	
 	public void testEchanger() {
-		System.out.println("TestEchanger");
 		try {
-			System.out.println("in");
+			System.out.println("TestEchanger");
 			Method method = Tri.class.getDeclaredMethod("echanger", int[].class, int.class, int.class);
 			method.setAccessible(true);
 			
@@ -113,7 +112,7 @@ public class TriTest extends TestCase {
 			method.invoke(null, tab, 0, 1);
 			
 			assert(Arrays.equals(new int[]{1, 2}, tab));
-			System.out.println("out");
+			System.out.println("fin TestEchanger");
 		} catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
 			System.out.println("catch");
 			e.printStackTrace();
