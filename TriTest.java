@@ -118,6 +118,12 @@ public class TriTest extends TestCase {
 			e.printStackTrace();
 		}
     }
+	public void testTriBulleOptimise() {
+        int[] input = {5, 3, 8, 1, 2};
+        int[] expected = {1, 2, 3, 5, 8};
+        Tri.triBulleOptimise(input);
+		assert(Arrays.equals(expected, input));
+    }
 
 
 
