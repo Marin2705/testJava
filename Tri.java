@@ -1,9 +1,8 @@
 import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Tri
 	{
-		
-		
 	public static boolean compare(int ta1[], int ta2[])
 	{
 		int l1=ta1.length;
